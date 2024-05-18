@@ -1,168 +1,916 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>BEEGarden</title>
-	</head>
-	<body>
-		<div class="main_container">
-			<section class="hero-section-wrapper">
-				<!-- navbar -->
-				<nav class="navbar navbar-expand-lg px-3 py-3">
-					<div class="container-fluid">
-						<a href="#" class="navbar-brand">
-							<img src="./assets/logo/bee.png" alt="" class="me-2" />
-							BEE GardenEdu
-						</a>
-						<button
-							class="navbar-toggler"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse">
-							<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-								<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses <i class="bx bxs-chevron-down"></i></a>
-									<ul class="dropdown-menu shadow-sm py-3 ps-2 mt-4 rounded-0">
-										<li>
-											<a href="#" class="dropdown-item my-1">Course Style 1</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Course Style 2</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Course Style 3</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Course Style 4</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Course Style 5</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Course Style 6</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages<i class="bx bxs-chevron-down"></i></a>
 
-									<ul class="dropdown-menu shadow-sm py-3 ps-2 mt-4 rounded-0">
-										<li>
-											<a href="#" class="dropdown-item my-1">Event</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Gallery</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Instructor</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Contact</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Pricing</a>
-										</li>
-										<li>
-											<a href="#" class="dropdown-item my-1">Testimonial</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Blog <i class="bx bxs-chevron-down"></i></a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Contact</a>
-								</li>
-							</ul>
-							<div class="d-flex" role="search">
-								<button class="btn shadow-sm me-3 search border-0">
-									<i class="bx bx-search text-primary fs-5 d-flex"></i>
-								</button>
-								<button class="btn btn-primary fw-bold login"><i class="feather-user"></i> Login / Register</button>
-							</div>
-						</div>
-					</div>
-				</nav>
-				<!-- home section -->
-				<section class="container-fluid home_section">
-					<div class="row w-100 h-100">
-						<div class="col">
-							<div class="left-content">
-								<p class="text-uppercase fw-bold text-primary slDown">better learning future with us</p>
-								<h1 class="display-2 slDown">
-									<span>Education Is</span>
-									<span>About Academic</span>
-									<span>Excellence</span>
-								</h1>
-								<p class="fs-5 intro slDown">Sed eu volutpat arcu, a tincidunt nulla quam, feugiat sit amet ipsum a, dapibus porta velit.</p>
-								<button class="btn btn-primary d-flex align-items-center fw-bolder fs-5 slDown">
-									Get Stated Today
-									<i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
-								</button>
-							</div>
-						</div>
-						<div class="col">
-							<div class="right-content">
-								<img src="./assets/hero-img/01.png" alt="" class="img" />
-								<img src="./assets/hero-img/02.png" alt="" class="img" />
-								<div class="img img_3"></div>
-							</div>
-						</div>
-					</div>
-					<div class="shape-img shape-img-1">
-						<img src="./assets/hero-img/shape-01.png" alt="" />
-					</div>
-					<div class="shape-img shape-img-2">
-						<img src="./assets/hero-img/shape-02.png" alt="" />
-					</div>
-				</section>
-			</section>
-			<!-- category -->
-			<section>
-				<div class="categories">
-					<p class="fw-bold text-uppercase text-primary">course categories</p>
-					<h1 class="display-6">Browse Popular Category</h1>
-				</div>
-				<div class="box p-5 m-5 border position-relative">
-					<button aria-label="Previous" class="glider-prev">
-						<i class="bi bi-arrow-left-short"></i>
-					</button>
-					<button aria-label="Next" class="glider-next">
-						<i class="bi bi-arrow-right-short"></i>
-					</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEEGarden</title>
+  <link rel="icon" href="./assets/logo/bee.png" width="16" height="20" type="image/x-icon">
+</head>
 
-					<div class="glider-contain mt-5">
-						<div class="glider">
-							<h1 class="bg-primary p-5 text-center">1</h1>
-							<h1 class="bg-secondary p-5 text-center">2</h1>
-							<h1 class="bg-danger p-5 text-center">3</h1>
-							<h1 class="bg-info p-5 text-center">4</h1>
-							<h1 class="bg-warning p-5 text-center">5</h1>
-							<h1 class="bg-danger p-5 text-center">6</h1>
-							<h1 class="bg-black p-5 text-center">7</h1>
-							<h1 class="bg-white p-5 text-center">8</h1>
-							<h1 class="bg-success p-5 text-center">9</h1>
-							<h1 class="bg-light p-5 text-center">10</h1>
-						</div>
-						<!-- <div role="tablist" class="dots"></div> -->
-					</div>
-				</div>
-			</section>
-		</div>
+<body>
+  <div class="main_container">
+    <section class="hero-section-wrapper">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg px-3 py-3">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="./assets/logo/bee.png" alt="" class="me-2" />
+            BEE GardenEdu
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                  aria-expanded="false">Courses <i class="bx bxs-chevron-down"></i></a>
+                <ul class="dropdown-menu animate slideDrop shadow-sm py-3 ps-2 mt-4 rounded-0">
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Introduction to Computers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Business Management</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Basic Digital Skills</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">English 4 Skills</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Project Management</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Data Science and Analytics</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Pages<i class="bx bxs-chevron-down"></i></a>
 
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script> -->
+                <ul class="dropdown-menu animate slideDrop shadow-sm py-3 ps-2 mt-4 rounded-0">
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Event</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Instructor</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Testimonial</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Blog<i class="bx bxs-chevron-down"></i></a>
 
-		<script type="module" src="/main.js"></script>
-	</body>
+                <ul class="dropdown-menu animate slideDrop shadow-sm py-3 ps-2 mt-4 rounded-0">
+                  <li>
+                    <a href="#" class="dropdown-item my-1">A Day in the Life of Our Students</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Celebrating Global Festivals and Traditions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Nurturing Creativity Through the Arts</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Sustainability Practices at Our School</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Embracing Cultural Diversity in Our Classrooms</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item my-1">Developing Leadership Skills in Young Learners</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+              <button class="btn shadow-sm me-3 search border-0">
+                <i class="bx bx-search text-primary fs-5 d-flex"></i>
+              </button>
+              <button class="btn btn-primary fw-bold login"><i class="feather-user"></i> Login / Register</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- home section -->
+      <section class="container-fluid home_section">
+        <div class="row w-100 h-100">
+          <div class="col">
+            <div class="left-content">
+              <p class="text-uppercase fw-bold text-primary slDown">better learning future with us</p>
+              <h1 class="display-2 slDown">
+                <span>Education Is</span>
+                <span>About Academic</span>
+                <span>Excellence</span>
+              </h1>
+              <p class="fs-5 intro slDown">Sed eu volutpat arcu, a tincidunt nulla quam, feugiat sit amet ipsum a,
+                dapibus porta velit.</p>
+              <button class="btn btn-primary d-flex align-items-center fw-bolder fs-5 slDown">
+                Get Stated Today
+                <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="right-content">
+              <img src="./assets/hero-img/01.png" alt="" class="img" />
+              <img src="./assets/hero-img/02.png" alt="" class="img" />
+              <div class="img img_3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="shape-img shape-img-1">
+          <img src="./assets/hero-img/shape-01.png" alt="" />
+        </div>
+        <div class="shape-img shape-img-2">
+          <img src="./assets/hero-img/shape-02.png" alt="" />
+        </div>
+      </section>
+    </section>
+
+    <!-- category -->
+    <section>
+      <div class="box p-5 m-5 position-relative">
+        <div class="d-flex w-100 px-lg-4 justify-content-between">
+          <div class="categories">
+            <p class="fw-bold text-uppercase text-primary">course categories</p>
+            <h1 class="display-6 fw-bolder">Browse Popular Category</h1>
+          </div>
+          <div class="w-25 d-flex align-items-center justify-content-end">
+            <button class="glider-prev shadow">
+              <i class="bx bx-left-arrow-alt"></i>
+            </button>
+            <button class="glider-next shadow ms-3">
+              <i class="bx bx-right-arrow-alt"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="glider-container mt-5">
+          <div class="glider">
+            <!-- art  -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/art.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Art & Design</p>
+              <p class="mb-0 text-secondary">23 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- content writing -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/content.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Content Writing</p>
+              <p class="mb-0 text-secondary">39 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- data science -->
+            <div
+              class="position-relative item science rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/data.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Data Science</p>
+              <p class="mb-0 text-secondary">15 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- health & fitness -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/health.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Health & Fitness</p>
+              <p class="mb-0 text-secondary">36 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- music learning -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/music.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Music Learning</p>
+              <p class="mb-0 text-secondary">59 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- art  -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/art.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Art & Design</p>
+              <p class="mb-0 text-secondary">23 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- content writing -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/content.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Content Writing</p>
+              <p class="mb-0 text-secondary">39 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- data science -->
+            <div
+              class="position-relative item science rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/data.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Data Science</p>
+              <p class="mb-0 text-secondary">15 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- health & fitness -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/health.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Health & Fitness</p>
+              <p class="mb-0 text-secondary">36 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+            <!-- music learning -->
+            <div class="position-relative item rounded p-4 d-flex flex-column justify-content-start align-items-center">
+              <div class="glider-bg">
+                <img src="./assets/img/music.png" alt="" />
+              </div>
+              <p class="mb-0 title fw-bolder">Music Learning</p>
+              <p class="mb-0 text-secondary">59 Items</p>
+              <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle">
+                <i class="bx bx-right-arrow-alt text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="position-absolute dot">
+          <img src="./assets/hero-img/shape-03.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- category end -->
+
+    <!-- about us -->
+    <section class="aboutUs_section">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="aboutUs-profileImg">
+            <div class="about-item position-relative">
+              <img
+                src="https://media.istockphoto.com/id/1159292164/photo/elementary-group-portrait.jpg?b=1&s=170667a&w=0&k=20&c=EbhaC2bqI-hrFi5IGMJXoi4osTXifgRpOvL6Sgb0OFY="
+                alt="" />
+              <div class="bg-primary position-absolute"></div>
+            </div>
+            <div class="about-item">
+              <img
+                src="https://media.istockphoto.com/id/1311259805/photo/pretty-caucasian-girl-portrait-isolated-on-pink-studio-background-with-copyspace.jpg?b=1&s=170667a&w=0&k=20&c=g8FVHAV4s5H2Ri4vTLmFuphg6q3wGxnvzJj0TRpJqjE="
+                alt="" />
+            </div>
+            <div class="about-item position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlbWVudGFyeSUyMGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div
+                class="position-absolute bg-white rounded-3 shadow-lg p-3 d-flex align-items-center justify-content-between total-students">
+                <div class="smile-icon d-flex align-items-center justify-content-center"><i
+                    class="bx bx-smile fs-4 text-white"></i></div>
+                <div class="d-flex flex-column">
+                  <h5 class="mb-0 fw-bold text-info">900K</h5>
+                  <p class="mb-0 small">Total Students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="aboutUs-content">
+            <div class="mb-4">
+              <p class="fw-bold text-uppercase text-primary">ABOUT US</p>
+              <h1 class="display-6 fw-bolder">The highest result of education is tolerance</h1>
+            </div>
+            <div>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc null liobortis nibh porttitor.
+                Facilisi arcu, nibh vel risus, morbi pharetra. Facilisi sit miam mauris non iaculis elit fusce amet
+                nunc in odio molestie.
+              </p>
+            </div>
+            <div class="row my-5">
+              <div class="col-lg-6 d-flex">
+                <div class="us-icon bg-info me-4"><i class="bx bx-chalkboard fs-2 text-white"></i></div>
+                <div>
+                  <h5>Flexible Classes</h5>
+                  <p class="text-secondary">There are many variations of passages of the Ipsum available for now</p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex">
+                <div class="us-icon bg-info me-4"><i class="bx bx-shopping-bag fs-2 text-white"></i></div>
+                <div>
+                  <h5>Educator Support</h5>
+                  <p class="text-secondary">There are many variations of passages of the Ipsum available for now</p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary d-flex align-items-center fw-bolder fs-5 slDown">
+              Learn More
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us end -->
+
+    <!-- offer the best carrier -->
+    <section class="carrier_section p-5 m-5">
+      <div class="filters-button-group">
+        <button data-name="*" class="me-2 fw-semibold py-2 px-4 rounded-1 border-0">All</button>
+        <button data-name=".trending" class="me-2 fw-semibold py-2 px-4 rounded-1 border-0">Trending</button>
+        <button data-name=".popularity" class="me-2 fw-semibold py-2 px-4 rounded-1 border-0">Popularity</button>
+        <button data-name=".featured" class="me-2 fw-semibold py-2 px-4 rounded-1 border-0">Featured</button>
+      </div>
+
+      <div class="grid pt-3">
+        <!-- course 1 -->
+        <div class="grid-item m-1 trending featured">
+          <div class="card">
+            <div class="card-img">
+              <div class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1521056787327-165dc2a32836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZW5nbGlzaCUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+                  alt="" />
+              </div>
+              <div class="category-tag translate-middle bg-primary text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between my-4">
+                <div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px"
+                    alt="" />
+                  <span class="mb-0 text-dark fw-semibold ms-2">James Carlos</span>
+                </div>
+                <div>
+                  <i class="bx bx-receipt fs-5 text-primary"></i>
+                  <span class="mb-0 text-secondary ms-2">45 Lessons</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-dark fw-bolder">Master Native English Class This Speaking Skills</h4>
+              </div>
+              <div class="divider my-4"></div>
+              <div class="d-flex align-items-center">
+                <p class="mb-0 fs-5 text-dark fw-bold me-3">$55.99</p>
+                <p class="text-secondary mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+                <div class="me-1">
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                </div>
+                <p class="text-secondary mb-0">(30)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-hover-action">
+            <div class="d-flex justify-content-between">
+              <div class="category-tag text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="my-4">
+              <h5 class="text-white fw-bolder">Master Native English Class This Speaking Skills</h5>
+            </div>
+            <p class="text-white-50">There are many variations of passages of Lorem Ipsaums available, but the majority
+              have suffered alteration. generators on the Internet tend to repeat.</p>
+            <div class="d-flex align-items-center my-4">
+              <p class="mb-0 fs-5 text-white fw-bold me-3">$55.99</p>
+              <p class="text-white-50 mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-4">
+              <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px" alt="" />
+                <span class="mb-0 text-white fw-semibold ms-2">James Carlos</span>
+              </div>
+              <div>
+                <i class="bx bx-receipt fs-5 text-white"></i>
+                <span class="mb-0 text-white ms-2">45 Lessons</span>
+              </div>
+            </div>
+            <button class="enroll-btn d-flex align-items-center">
+              Enroll Now
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <!-- course 2 -->
+        <div class="grid-item m-1 trending">
+          <div class="card">
+            <div class="card-img">
+              <div class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1521056787327-165dc2a32836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZW5nbGlzaCUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+                  alt="" />
+              </div>
+              <div class="category-tag translate-middle bg-primary text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between my-4">
+                <div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px"
+                    alt="" />
+                  <span class="mb-0 text-dark fw-semibold ms-2">James Carlos</span>
+                </div>
+                <div>
+                  <i class="bx bx-receipt fs-5 text-primary"></i>
+                  <span class="mb-0 text-secondary ms-2">45 Lessons</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-dark fw-bolder">Master Native English Class This Speaking Skills</h4>
+              </div>
+              <div class="divider my-4"></div>
+              <div class="d-flex align-items-center">
+                <p class="mb-0 fs-5 text-dark fw-bold me-3">$55.99</p>
+                <p class="text-secondary mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+                <div class="me-1">
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                </div>
+                <p class="text-secondary mb-0">(30)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-hover-action">
+            <div class="d-flex justify-content-between">
+              <div class="category-tag text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="my-4">
+              <h5 class="text-white fw-bolder">Master Native English Class This Speaking Skills</h5>
+            </div>
+            <p class="text-white-50">There are many variations of passages of Lorem Ipsaums available, but the majority
+              have suffered alteration. generators on the Internet tend to repeat.</p>
+            <div class="d-flex align-items-center my-4">
+              <p class="mb-0 fs-5 text-white fw-bold me-3">$55.99</p>
+              <p class="text-white-50 mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-4">
+              <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px" alt="" />
+                <span class="mb-0 text-white fw-semibold ms-2">James Carlos</span>
+              </div>
+              <div>
+                <i class="bx bx-receipt fs-5 text-white"></i>
+                <span class="mb-0 text-white ms-2">45 Lessons</span>
+              </div>
+            </div>
+            <button class="enroll-btn d-flex align-items-center">
+              Enroll Now
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <!-- course 3 -->
+        <div class="grid-item m-1 featured">
+          <div class="card">
+            <div class="card-img">
+              <div class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1521056787327-165dc2a32836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZW5nbGlzaCUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+                  alt="" />
+              </div>
+              <div class="category-tag translate-middle bg-primary text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between my-4">
+                <div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px"
+                    alt="" />
+                  <span class="mb-0 text-dark fw-semibold ms-2">James Carlos</span>
+                </div>
+                <div>
+                  <i class="bx bx-receipt fs-5 text-primary"></i>
+                  <span class="mb-0 text-secondary ms-2">45 Lessons</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-dark fw-bolder">Master Native English Class This Speaking Skills</h4>
+              </div>
+              <div class="divider my-4"></div>
+              <div class="d-flex align-items-center">
+                <p class="mb-0 fs-5 text-dark fw-bold me-3">$55.99</p>
+                <p class="text-secondary mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+                <div class="me-1">
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                </div>
+                <p class="text-secondary mb-0">(30)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-hover-action">
+            <div class="d-flex justify-content-between">
+              <div class="category-tag text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="my-4">
+              <h5 class="text-white fw-bolder">Master Native English Class This Speaking Skills</h5>
+            </div>
+            <p class="text-white-50">There are many variations of passages of Lorem Ipsaums available, but the majority
+              have suffered alteration. generators on the Internet tend to repeat.</p>
+            <div class="d-flex align-items-center my-4">
+              <p class="mb-0 fs-5 text-white fw-bold me-3">$55.99</p>
+              <p class="text-white-50 mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-4">
+              <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px" alt="" />
+                <span class="mb-0 text-white fw-semibold ms-2">James Carlos</span>
+              </div>
+              <div>
+                <i class="bx bx-receipt fs-5 text-white"></i>
+                <span class="mb-0 text-white ms-2">45 Lessons</span>
+              </div>
+            </div>
+            <button class="enroll-btn d-flex align-items-center">
+              Enroll Now
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <!-- course 4 -->
+        <div class="grid-item m-1 popularity featured">
+          <div class="card">
+            <div class="card-img">
+              <div class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1521056787327-165dc2a32836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZW5nbGlzaCUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+                  alt="" />
+              </div>
+              <div class="category-tag translate-middle bg-primary text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between my-4">
+                <div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px"
+                    alt="" />
+                  <span class="mb-0 text-dark fw-semibold ms-2">James Carlos</span>
+                </div>
+                <div>
+                  <i class="bx bx-receipt fs-5 text-primary"></i>
+                  <span class="mb-0 text-secondary ms-2">45 Lessons</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-dark fw-bolder">Master Native English Class This Speaking Skills</h4>
+              </div>
+              <div class="divider my-4"></div>
+              <div class="d-flex align-items-center">
+                <p class="mb-0 fs-5 text-dark fw-bold me-3">$55.99</p>
+                <p class="text-secondary mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+                <div class="me-1">
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                </div>
+                <p class="text-secondary mb-0">(30)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-hover-action">
+            <div class="d-flex justify-content-between">
+              <div class="category-tag text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="my-4">
+              <h5 class="text-white fw-bolder">Master Native English Class This Speaking Skills</h5>
+            </div>
+            <p class="text-white-50">There are many variations of passages of Lorem Ipsaums available, but the majority
+              have suffered alteration. generators on the Internet tend to repeat.</p>
+            <div class="d-flex align-items-center my-4">
+              <p class="mb-0 fs-5 text-white fw-bold me-3">$55.99</p>
+              <p class="text-white-50 mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-4">
+              <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px" alt="" />
+                <span class="mb-0 text-white fw-semibold ms-2">James Carlos</span>
+              </div>
+              <div>
+                <i class="bx bx-receipt fs-5 text-white"></i>
+                <span class="mb-0 text-white ms-2">45 Lessons</span>
+              </div>
+            </div>
+            <button class="enroll-btn d-flex align-items-center">
+              Enroll Now
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <!-- course 5 -->
+        <div class="grid-item m-1 featured">
+          <div class="card">
+            <div class="card-img">
+              <div class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1521056787327-165dc2a32836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZW5nbGlzaCUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+                  alt="" />
+              </div>
+              <div class="category-tag translate-middle bg-primary text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between my-4">
+                <div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px"
+                    alt="" />
+                  <span class="mb-0 text-dark fw-semibold ms-2">James Carlos</span>
+                </div>
+                <div>
+                  <i class="bx bx-receipt fs-5 text-primary"></i>
+                  <span class="mb-0 text-secondary ms-2">45 Lessons</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-dark fw-bolder">Master Native English Class This Speaking Skills</h4>
+              </div>
+              <div class="divider my-4"></div>
+              <div class="d-flex align-items-center">
+                <p class="mb-0 fs-5 text-dark fw-bold me-3">$55.99</p>
+                <p class="text-secondary mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+                <div class="me-1">
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                </div>
+                <p class="text-secondary mb-0">(30)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-hover-action">
+            <div class="d-flex justify-content-between">
+              <div class="category-tag text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="my-4">
+              <h5 class="text-white fw-bolder">Master Native English Class This Speaking Skills</h5>
+            </div>
+            <p class="text-white-50">There are many variations of passages of Lorem Ipsaums available, but the majority
+              have suffered alteration. generators on the Internet tend to repeat.</p>
+            <div class="d-flex align-items-center my-4">
+              <p class="mb-0 fs-5 text-white fw-bold me-3">$55.99</p>
+              <p class="text-white-50 mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-4">
+              <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px" alt="" />
+                <span class="mb-0 text-white fw-semibold ms-2">James Carlos</span>
+              </div>
+              <div>
+                <i class="bx bx-receipt fs-5 text-white"></i>
+                <span class="mb-0 text-white ms-2">45 Lessons</span>
+              </div>
+            </div>
+            <button class="enroll-btn d-flex align-items-center">
+              Enroll Now
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <!-- course 6 -->
+        <div class="grid-item m-1 featured">
+          <div class="card">
+            <div class="card-img">
+              <div class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1521056787327-165dc2a32836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZW5nbGlzaCUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+                  alt="" />
+              </div>
+              <div class="category-tag translate-middle bg-primary text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between my-4">
+                <div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px"
+                    alt="" />
+                  <span class="mb-0 text-dark fw-semibold ms-2">James Carlos</span>
+                </div>
+                <div>
+                  <i class="bx bx-receipt fs-5 text-primary"></i>
+                  <span class="mb-0 text-secondary ms-2">45 Lessons</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-dark fw-bolder">Master Native English Class This Speaking Skills</h4>
+              </div>
+              <div class="divider my-4"></div>
+              <div class="d-flex align-items-center">
+                <p class="mb-0 fs-5 text-dark fw-bold me-3">$55.99</p>
+                <p class="text-secondary mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+                <div class="me-1">
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                  <i class="bx bxs-star text-info fs-5"></i>
+                </div>
+                <p class="text-secondary mb-0">(30)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-hover-action">
+            <div class="d-flex justify-content-between">
+              <div class="category-tag text-white fw-semibold">
+                <p class="mb-0">Language Learing</p>
+              </div>
+              <div class="react">
+                <i class="bx bxs-heart text-white fs-5"></i>
+              </div>
+            </div>
+            <div class="my-4">
+              <h5 class="text-white fw-bolder">Master Native English Class This Speaking Skills</h5>
+            </div>
+            <p class="text-white-50">There are many variations of passages of Lorem Ipsaums available, but the majority
+              have suffered alteration. generators on the Internet tend to repeat.</p>
+            <div class="d-flex align-items-center my-4">
+              <p class="mb-0 fs-5 text-white fw-bold me-3">$55.99</p>
+              <p class="text-white-50 mb-0 me-4 fw-semibold text-decoration-line-through">$65.99</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between my-4">
+              <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="35px" height="35px" alt="" />
+                <span class="mb-0 text-white fw-semibold ms-2">James Carlos</span>
+              </div>
+              <div>
+                <i class="bx bx-receipt fs-5 text-white"></i>
+                <span class="mb-0 text-white ms-2">45 Lessons</span>
+              </div>
+            </div>
+            <button class="enroll-btn d-flex align-items-center">
+              Enroll Now
+              <i class="bx bx-arrow-back bx-rotate-180 ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end offer the best carrier -->
+
+    <!-- footer section -->
+    <footer class="bg-dark text-white mt-4">
+      <div class="container">
+        <div class="row py-4">
+          <!-- About Us -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">About Us</h5>
+            <p>We provide quality education for students worldwide, fostering a love for learning and preparing them for
+              a
+              global future.</p>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white">Home</a></li>
+              <li class="mb-2"><a href="#" class="text-white">About</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Courses</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Admissions</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Education Street, Maine City, Myanmar</li>
+              <li class="mb-2"><i class="fas fa-phone-alt mr-2"></i>+123 456 7890</li>
+              <li class="mb-2"><i class="fas fa-envelope mr-2"></i>info@educationwebsite.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="mb-3">&copy; 2022 BEEGarden Education Website. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- scroll to top -->
+    <div id="scrollMe">
+      <div><i class="bx bx-chevron-up"></i></div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

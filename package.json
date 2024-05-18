@@ -16,6 +16,8 @@
     "boxicons": "^2.1.4",
     "glider-js": "^1.7.8",
     "gsap": "^3.11.3",
+    "imagehover.css": "^2.0.0",
+    "isotope-layout": "^3.0.6",
     "sass": "^1.56.1"
   }
 }

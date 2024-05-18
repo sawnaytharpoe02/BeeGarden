@@ -1,8 +1,11 @@
-import './style.scss';
+import './style.css';
 import * as bootstrap from 'bootstrap';
+import Glider from 'glider-js';
 import gsap from 'gsap';
 import { ScrollTrigger, CSSRulePlugin } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
+import './node_modules/isotope-layout/dist/isotope.pkgd';
+import './node_modules/isotope-layout/dist/isotope.pkgd.min.js';
 
 // ScrollTrigger.create({
 // 	markers: true,
@@ -26,11 +29,11 @@ gsap.to('.navbar', {
 		end: `10000% top`,
 		toggleActions: 'restart',
 		//onEnter leave onEnterback onLeaveBack
-		markers: {
-			startColor: 'black',
-			endColor: 'black',
-			fontSize: '1rem',
-		},
+		// markers: {
+		// 	startColor: 'black',
+		// 	endColor: 'black',
+		// 	fontSize: '1rem',
+		// },
 	},
 });
 var rule = CSSRulePlugin.getRule('.left-content h1 span:after');
@@ -40,7 +43,6 @@ gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 2 });
 
 new Glider(document.querySelector('.glider'), {
 	slidesToShow: 5,
-	// dots: ".dots",
 	duration: 2.5,
 	draggable: true,
 	dragVelocity: 1.5,
@@ -49,3 +51,30 @@ new Glider(document.querySelector('.glider'), {
 		next: '.glider-next',
 	},
 });
+
+var elem = document.querySelector('.grid');
+var iso = new Isotope(elem, {
+	itemSelector: '.grid-item',
+	layoutMode: 'fitRows',
+});
+
+var filtersElem = document.querySelector('.filters-button-group');
+filtersElem.addEventListener('click', function (event) {
+	if (!matchesSelector(event.target, 'button')) {
+		return;
+	}
+	var filterValue = event.target.getAttribute('data-name');
+	iso.arrange({ filter: filterValue });
+});
+
+let scrollProgress = () => {
+	let scrollProgress = document.getElementById('scrollMe');
+	let pos = document.documentElement.scrollTop;
+	let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	let scrollValue = Math.round((pos * 100) / calcHeight);
+
+	scrollProgress.style.background = `conic-gradient(#f86f03 ${scrollValue}%, #c0c0ff ${scrollValue}%)`;
+};
+
+window.onscroll = scrollProgress;
+window.onload = scrollProgress;
