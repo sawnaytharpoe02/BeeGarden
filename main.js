@@ -3,6 +3,8 @@ import Glider from "glider-js";
 import gsap from "gsap";
 import { ScrollTrigger, CSSRulePlugin } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
+import './node_modules/isotope-layout/dist/isotope.pkgd';
+import './node_modules/isotope-layout/dist/isotope.pkgd.min.js';
 
 gsap.to(".navbar", {
   duration: 2,
